@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(https://fonts.google.com/specimen/Work+Sans);
+}
+
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+}
+
+#top-bg img {
+    width: 100vw;
+}
+
+#faq-card {
+    box-shadow: 1px 1px 50px hsl(292, 16%, 49%);
+    width: 25%;
+    border-radius: 10px;
+}
+
+#faq-header {
+    display: flex;
+}
+
+#faq-title {
+    margin-left: 20px;
+}
+
+.accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 10px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+button.accordion::after {
+    content: url(/assets/images/icon-plus.svg);
+    float: right;
+}
+
+button.accordion.active::after {
+    content: url(/assets/images/icon-minus.svg);
+}
