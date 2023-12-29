@@ -7,69 +7,47 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="/styles/styles.css" />
-  <script src="/script.js"></script>
+  <link rel="stylesheet" href="styles/styles.css"/>
 
   <title>Frontend Mentor | FAQ accordion</title>
 </head>
 
 <body>
+
   <main>
-    <div id="top-bg"><img src="/assets/images/background-pattern-desktop.svg" /></div>
-    <section id="faq-card">
-      <section id="faq-header">
-        <img src="/assets/images/icon-star.svg" id="faq-image">
-        <h1 id="faq-title">FAQs</h1>
-      </section>
-      <section id="faq-container">
-        <article class="question">
-          <button class="accordion">
+
+    <div id="upper-bg"> 
+      <img src="assets/images/background-pattern-desktop.svg" alt="">
+    </div>
+
+    <div id="accordion-container">
+
+      <div id="accordion-header">
+        <img src="assets/images/icon-star.svg" alt="">
+        <h1>FAQs</h1>
+      </div>
+
+      <div id="accordion-list">
+        <div class="accordion-item">
+          <button class="accordion-item-button">
             What is Frontend Mentor, and how will it help me?
           </button>
-          <div class="panel">
-            <p>We provide front-end challenges that include professional web designs. These allow you to practice
-              building websites in a realistic workflow. Taking these challenges will help you improve your skills, gain
-              experience creating websites, and build up an incredible project portfolio. We also have a large community
-              of developers, so it's a great way to meet other devs!</p>
+          <div class="accordion-item-panel">
+            We provide front-end challenges that include professional web designs. These allow you to practice building websites in a realistic workflow. Taking these challenges will help you improve your skills, gain experience creating websites, and build up an incredible project portfolio. We also have a large community of developers, so it's a great way to meet other devs!
           </div>
-        </article>
-        <article class="question">
-          <button class="accordion">
-            Is Frontend Mentor free?
-          </button>
-          <div class="panel">
-            <p>The majority of our challenges are free, yes. We do have some that are premium and require a Pro
-              subscription to access. It will say on each challenge whether they are free or premium, so it's easy to
-              tell the difference.</p>
-          </div>
-        </article>
-        <article class="question">
-          <button class="accordion">
-            Can I use Fronend Mentor Projects in my portfolio?
-          </button>
-          <div class="panel">
-            <p>Definitely! Please do feel free to use whatever you build in your portfolio. Helping developers add
-              professional-looking projects to their portfolio was one of the reasons we created this platform!</p>
-          </div>
-        </article>
-        <article class="question">
-          <button class="accordion">
-            How can I get help if I'm stuck on a challenge?
-          </button>
-          <div class="panel">
-            <p>The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of
-              other developers in there, so it's a great place to ask questions. We even have a dedicated "help"
-              channel! If you haven't joined yet, you can get an invite to our Discord server here.</p>
-          </div>
-        </article>
-      </section>
-    </section>
+        </div>
+      </div>
+
+    </div>
+
   </main>
 
   <!--   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="Athallah Naufal R. A.">Your Name Here</a>.
   </footer> -->
+
+  <script src="script.js"></script>
 </body>
 
 </html>
