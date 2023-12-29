@@ -24,6 +24,8 @@ main {
 
 #accordion-container {
   margin-inline: auto;
+  padding: 2em;
+  padding-top: 1em;
   border: 3px solid black;
   background-color: white;
   position: relative;
@@ -32,4 +34,13 @@ main {
 }
 #accordion-container #accordion-header {
   display: flex;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  margin-bottom: 0.5em;
+}
+#accordion-container #accordion-list .accordion-item .accordion-item-button {
+  margin-bottom: 2.5em;
+  cursor: pointer;
+  border: none;
+  background: transparent;
 }/*# sourceMappingURL=styles.css.map */
