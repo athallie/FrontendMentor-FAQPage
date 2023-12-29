@@ -1,0 +1,46 @@
+body {
+    background-color: hsl(275, 100%, 97%);
+    margin: 0;
+}
+
+main {
+    position: relative;
+}
+
+#upper-bg {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    img {
+        min-width: 100%;
+        max-width: 100%;
+        height: 35vh;
+        object-fit: cover;
+    }
+}
+
+#accordion-container {
+    margin-inline: auto;
+
+    border: 3px solid black;
+    background-color: white;
+
+    position: relative;
+    bottom: 3em;
+
+    width: 50%;
+
+    #accordion-header {
+        display: flex;
+    }
+
+    #accordion-list {
+        .accordion-item {
+        
+        }
+    }
+
+}
