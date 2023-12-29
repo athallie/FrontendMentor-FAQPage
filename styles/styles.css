@@ -13,6 +13,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  position: relative;
 }
 #upper-bg img {
   min-width: 100%;
@@ -26,11 +27,12 @@ main {
   margin-inline: auto;
   padding: 2em;
   padding-top: 1em;
-  border: 3px solid black;
+  border-radius: 1em;
   background-color: white;
+  box-shadow: 0px 10px 20px -10px hsl(292, 16%, 49%);
   position: relative;
-  bottom: 3em;
-  width: 50%;
+  bottom: 7em;
+  width: 40%;
 }
 #accordion-container #accordion-header {
   display: flex;
@@ -39,8 +41,16 @@ main {
   margin-bottom: 0.5em;
 }
 #accordion-container #accordion-list .accordion-item .accordion-item-button {
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   cursor: pointer;
   border: none;
   background: transparent;
+  transition: 0.25s;
+}
+#accordion-container #accordion-list .accordion-item .active, #accordion-container #accordion-list .accordion-item .accordion-item-button:hover {
+  color: hsl(292, 16%, 49%);
+}
+#accordion-container #accordion-list .accordion-item .accordion-item-panel {
+  display: none;
+  overflow: hidden;
 }/*# sourceMappingURL=styles.css.map */
