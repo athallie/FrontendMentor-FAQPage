@@ -1,6 +1,14 @@
+/* Fonts */
+/* @font-face {
+    font-family: "WorkSans";
+    src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+    font-weight: 400 700;
+    font-style: normal;
+} */
 body {
   background-color: hsl(275, 100%, 97%);
   margin: 0;
+  font-family: "Work Sans", sans-serif;
 }
 
 main {
@@ -32,7 +40,7 @@ main {
   box-shadow: 0px 10px 20px -10px hsl(292, 16%, 49%);
   position: relative;
   bottom: 7em;
-  width: 30%;
+  width: 40%;
 }
 #accordion-container #accordion-header {
   display: flex;
@@ -40,17 +48,28 @@ main {
        column-gap: 1em;
   margin-bottom: 0.5em;
 }
+#accordion-container #accordion-header h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: hsl(292, 42%, 14%);
+}
 #accordion-container #accordion-list .accordion-item .accordion-item-button {
   margin-bottom: 2em;
+  color: hsl(292, 42%, 14%);
+  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
   border: none;
   background: transparent;
   transition: 0.25s;
 }
 #accordion-container #accordion-list .accordion-item .active, #accordion-container #accordion-list .accordion-item .accordion-item-button:hover {
-  color: hsl(292, 16%, 49%);
+  color: hsl(282, 72%, 51%);
 }
 #accordion-container #accordion-list .accordion-item .accordion-item-panel {
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(292, 16%, 49%);
   display: none;
   overflow: hidden;
   margin-bottom: 2.5em;
