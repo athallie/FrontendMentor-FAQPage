@@ -32,7 +32,7 @@ main {
   box-shadow: 0px 10px 20px -10px hsl(292, 16%, 49%);
   position: relative;
   bottom: 7em;
-  width: 40%;
+  width: 30%;
 }
 #accordion-container #accordion-header {
   display: flex;
@@ -53,4 +53,5 @@ main {
 #accordion-container #accordion-list .accordion-item .accordion-item-panel {
   display: none;
   overflow: hidden;
+  margin-bottom: 2.5em;
 }/*# sourceMappingURL=styles.css.map */
