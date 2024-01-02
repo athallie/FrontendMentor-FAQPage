@@ -33,44 +33,64 @@ main {
 
 #accordion-container {
   margin-inline: auto;
-  padding: 2em;
-  padding-top: 1em;
+  padding: 2.5em;
+  padding-top: 0.5em;
+  padding-bottom: 1.75em;
   border-radius: 1em;
   background-color: white;
   box-shadow: 0px 10px 20px -10px hsl(292, 16%, 49%);
   position: relative;
-  bottom: 7em;
-  width: 40%;
+  bottom: 8.5em;
+  width: 35%;
 }
 #accordion-container #accordion-header {
   display: flex;
   -moz-column-gap: 1em;
        column-gap: 1em;
-  margin-bottom: 0.5em;
 }
 #accordion-container #accordion-header h1 {
   font-weight: 700;
   font-size: 3rem;
   color: hsl(292, 42%, 14%);
 }
+#accordion-container #accordion-header img {
+  width: 8%;
+}
+#accordion-container #accordion-list .accordion-item {
+  margin-bottom: 1em;
+  border-bottom: 1px solid hsl(0, 0%, 85%);
+}
 #accordion-container #accordion-list .accordion-item .accordion-item-button {
-  margin-bottom: 2em;
+  width: 100%;
+  margin-top: 0.75em;
+  margin-bottom: 1em;
+  padding-inline: 0;
   color: hsl(292, 42%, 14%);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  text-align: start;
+  line-height: 2em;
   cursor: pointer;
   border: none;
   background: transparent;
   transition: 0.25s;
 }
-#accordion-container #accordion-list .accordion-item .active, #accordion-container #accordion-list .accordion-item .accordion-item-button:hover {
+#accordion-container #accordion-list .accordion-item .accordion-item-button:hover {
   color: hsl(282, 72%, 51%);
+}
+#accordion-container #accordion-list .accordion-item .accordion-item-button::after {
+  content: url("/assets/images/icon-plus.svg");
+  float: right;
+}
+#accordion-container #accordion-list .accordion-item .active::after {
+  content: url("/assets/images/icon-minus.svg");
 }
 #accordion-container #accordion-list .accordion-item .accordion-item-panel {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: hsl(292, 16%, 49%);
   display: none;
   overflow: hidden;
   margin-bottom: 2.5em;
+  line-height: 1.5em;
 }/*# sourceMappingURL=styles.css.map */
