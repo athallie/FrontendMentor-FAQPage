@@ -15,6 +15,10 @@ main {
   position: relative;
 }
 
+button {
+  font-family: inherit;
+}
+
 #upper-bg {
   background-color: black;
   display: flex;
@@ -33,43 +37,47 @@ main {
 
 #accordion-container {
   margin-inline: auto;
-  padding: 2.5em;
+  padding-inline: 2.2em;
   padding-top: 0.5em;
   padding-bottom: 1.75em;
   border-radius: 1em;
   background-color: white;
   box-shadow: 0px 10px 20px -10px hsl(292, 16%, 49%);
   position: relative;
-  bottom: 8.5em;
-  width: 35%;
+  bottom: 8.3em;
+  width: 36.2%;
 }
 #accordion-container #accordion-header {
   display: flex;
-  -moz-column-gap: 1em;
-       column-gap: 1em;
+  -moz-column-gap: 1.3em;
+       column-gap: 1.3em;
+  margin-top: 0.25em;
+  align-items: center;
 }
 #accordion-container #accordion-header h1 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.1rem;
   color: hsl(292, 42%, 14%);
+  margin-top: 0.45em;
+  margin-bottom: 0.55em;
 }
 #accordion-container #accordion-header img {
-  width: 8%;
+  width: 7.8%;
+  padding-bottom: 0.2em;
 }
 #accordion-container #accordion-list .accordion-item {
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
   border-bottom: 1px solid hsl(0, 0%, 85%);
 }
 #accordion-container #accordion-list .accordion-item .accordion-item-button {
-  width: 100%;
-  margin-top: 0.75em;
-  margin-bottom: 1em;
+  width: 100.5%;
+  padding-bottom: 1.15em;
   padding-inline: 0;
   color: hsl(292, 42%, 14%);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: start;
-  line-height: 2em;
+  line-height: 1.8em;
   cursor: pointer;
   border: none;
   background: transparent;
@@ -79,18 +87,29 @@ main {
   color: hsl(282, 72%, 51%);
 }
 #accordion-container #accordion-list .accordion-item .accordion-item-button::after {
-  content: url("/assets/images/icon-plus.svg");
+  content: "";
+  background-image: url("/assets/images/icon-plus.svg");
+  width: 1.875em;
+  height: 1.875em;
+  background-size: 90%;
+  background-repeat: no-repeat;
   float: right;
 }
 #accordion-container #accordion-list .accordion-item .active::after {
-  content: url("/assets/images/icon-minus.svg");
+  content: "";
+  background-image: url("/assets/images/icon-minus.svg");
+  width: 1.875em;
+  height: 1.875em;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  float: right;
 }
 #accordion-container #accordion-list .accordion-item .accordion-item-panel {
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 0.89rem;
   color: hsl(292, 16%, 49%);
   display: none;
   overflow: hidden;
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
   line-height: 1.5em;
 }/*# sourceMappingURL=styles.css.map */
